@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <script src="./js/script.js"></script>
+    <header>
+        <div id="imgLogo"><img id="img1" src="./css/images/logo.jfif" alt=""></div>
+        <div id="motto">Aprendendo a Programar</div>
+        <div id="gitHub"><a href="https://github.com/Bruno-Rodrigo-Siqueira" target="blank"><img id="img2"
+                    src="./css/images/github.png" alt="gitHub"></a></div>
+    </header>
+    <h1>EDITOR DE TEXTO</h1>
+    <main>
+        <h2>Seu texto aparecerá aqui</h2>
+    </main>
+    <hr>
+    <div id="box">
+        <input type="text" placeholder="Digite seu Texto aqui" onchange="changeH2()">
+        <button id="reset" onclick="reset()">Limpar</button>
+    </div>
+    <div class="buttons">
+        <button onclick="bigText()">Aumentar Texto</button>
+        <button onclick="smallText()">Diminuir Texto</button>
+        <button onclick="italicText()">Itálico</button>
+    </div>
+    <div class="buttons">
+        <button onclick="underlined()">Sublinhado</button>
+        <button onclick="linethrough()">Riscado</button>
+        <button onclick="uppercase()">Tudo Maiúsculo</button>
+    </div>
+    <div class="buttons" id="last">
+        <button onclick="lowercase()">Tudo Minúsculo</button>
+        <button onclick="changeFont()">Mudar a Fonte</button>
+        <button onclick="shadow()">Sombreado</button>
+    </div>
+
+</body>
+
+</html>
